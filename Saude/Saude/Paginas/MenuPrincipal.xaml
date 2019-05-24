@@ -1,0 +1,77 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="Saude.Paginas.MenuPrincipal">
+    <ContentPage.Content>
+        <ScrollView>
+
+            <StackLayout>
+            <Grid HorizontalOptions="Center" >
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="170"/>
+                    <ColumnDefinition Width="170"/>
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="150"/>
+                    <RowDefinition Height="150"/>
+                    <RowDefinition Height="150"/>
+                    <RowDefinition Height="150"/>
+                </Grid.RowDefinitions>
+                <!--Perfil do usuario-->
+                <BoxView BackgroundColor="#009e0f" Grid.Column="0" Grid.Row="0" Grid.ColumnSpan="2"  Margin="10,10,10,0" CornerRadius="40"/>
+                <Label Text="Nome: Emerson"  Grid.Column="1"  Grid.Row="0" Margin="0,20,0,0" TextColor="White"/>
+                <Label Text="Idade: 37 Anos"  Grid.Column="1"  Grid.Row="0" Margin="0,45,0,0" TextColor="White"/>
+                <Label Text="Tipo Sanguineo: A- "  Grid.Column="1"  Grid.Row="0" Margin="0,70,0,0" TextColor="White"/>
+                <Label Text="Hipertenso e Diabetico"  Grid.Column="1"  Grid.Row="0" Margin="0,95,0,0" TextColor="White"/>
+                <!--Corpo o app-->
+                <!--Botao um-->
+                    <BoxView BackgroundColor="#009e0f" Grid.Column="0" Grid.Row="1" CornerRadius="40"/>
+                    <Label Text="Médico" Grid.Column="0" Grid.Row="1" TextColor="White" HorizontalOptions="Center">
+                        <Label.GestureRecognizers>
+                            <TapGestureRecognizer Tapped="Btn1" NumberOfTapsRequired="1"/>
+                        </Label.GestureRecognizers>
+                    </Label>
+                
+                    <!--Botao dois-->
+                    <BoxView BackgroundColor="#009e0f" Grid.Column="1" Grid.Row="1" CornerRadius="40"/>
+                    <Label Text="Fala" Grid.Column="1" Grid.Row="1" TextColor="White" HorizontalOptions="Center">
+                        <Label.GestureRecognizers>
+                            <TapGestureRecognizer Tapped="Btn2" NumberOfTapsRequired="1"/>
+                        </Label.GestureRecognizers>
+                    </Label>
+                    <!--Botao tres-->
+                    <BoxView BackgroundColor="#009e0f" Grid.Column="0" Grid.Row="2" CornerRadius="40"/>
+                    <Label Text="Remédio" Grid.Column="0" Grid.Row="2" TextColor="White" HorizontalOptions="Center">
+                            <Label.GestureRecognizers>
+                                <TapGestureRecognizer Tapped="Btn3" NumberOfTapsRequired="1"/>
+                            </Label.GestureRecognizers>
+                     </Label>
+                    <!--Botao quatro-->
+                    <BoxView BackgroundColor="#009e0f" Grid.Column="1" Grid.Row="2" CornerRadius="40"/>
+                    <Label Text="Meu corpo" Grid.Column="1" Grid.Row="2" TextColor="White" HorizontalOptions="Center">
+                            <Label.GestureRecognizers>
+                                <TapGestureRecognizer Tapped="Btn4" NumberOfTapsRequired="1"/>
+                            </Label.GestureRecognizers>
+                    </Label>
+                    <!--Botao cinco-->
+                    <BoxView BackgroundColor="#009e0f" Grid.Column="0" Grid.Row="3" CornerRadius="40"/>
+                    <Label Text="Minha Casa" Grid.Column="0" Grid.Row="3" TextColor="White" HorizontalOptions="Center">
+                        <Label.GestureRecognizers>
+                            <TapGestureRecognizer Tapped="Btn5" NumberOfTapsRequired="1"/>
+                        </Label.GestureRecognizers>
+                    </Label>
+                    <!--Botao seis-->
+                    <BoxView BackgroundColor="#009e0f" Grid.Column="1" Grid.Row="3" CornerRadius="40"/>
+                    <Label Text="Lupa" Grid.Column="1" Grid.Row="3" TextColor="White" HorizontalOptions="Center">
+                        <Label.GestureRecognizers>
+                            <TapGestureRecognizer Tapped="Btn6" NumberOfTapsRequired="1"/>
+                        </Label.GestureRecognizers>
+                    </Label>
+            </Grid>
+        </StackLayout>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>

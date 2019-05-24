@@ -1,0 +1,31 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using Xamarin.Essentials;
+
+using Xamarin.Forms;
+using Xamarin.Forms.Xaml;
+
+namespace Saude.Paginas.PaginasMenu
+{
+    [XamlCompilation(XamlCompilationOptions.Compile)]
+    public partial class Fala : ContentPage
+    {
+        public Fala()
+        {
+            InitializeComponent();
+        }
+        public async Task Falar()
+        {
+            await TextToSpeech.SpeakAsync("");
+        }
+
+        private async void Button_Clicked(object sender, EventArgs e)
+        {
+            var Texto = voz.Text;
+            await TextToSpeech.SpeakAsync(Texto);
+        }
+    }
+}
